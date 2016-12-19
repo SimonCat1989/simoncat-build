@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.simoncat.build</groupId>
+  <artifactId>simoncat-build-integration</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <!-- Dependency Management from other projects in framework -->
+    <module>simoncat-framework-build/simoncat-framework-document-operator-build</module>
+    <module>simoncat-framework-build/simoncat-framework-graph-build</module>
+
+    <!-- Dependency Management from other projects in front -->
+    <module>simoncat-front-build/simoncat-station-topology-graph-build</module>
+
+    <!-- Modules in framework -->
+    <module>simoncat-framework-build-base</module>
+
+    <!-- Modules in front -->
+    <module>simoncat-front-build-base</module>
+  </modules>
+</project>

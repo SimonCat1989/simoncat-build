@@ -1,30 +1,33 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
 
-  <groupId>com.simoncat.framework</groupId>
-  <artifactId>simoncat-framework-build-base</artifactId>
-  <packaging>pom</packaging>
-  <version>1.0.0-SNAPSHOT</version>
-  <name>simoncat-framework-build-base</name>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.0.1.RELEASE</version>
+  </parent>
 
   <organization>
     <name>SimonCat</name>
     <url>TO BE ADDED</url>
   </organization>
 
+  <groupId>com.simoncat.build</groupId>
+  <artifactId>simoncat-front-springboot-build</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0.0-SNAPSHOT</version>
+  <name>simoncat-front-springboot-build</name>
+
   <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <project.locale.default>en</project.locale.default>
-    <skip.all.test.cases>true</skip.all.test.cases>
     <!-- Version of simoncat-framework -->
     <simoncat.framework.version>1.0.0-SNAPSHOT</simoncat.framework.version>
+    
+    <!-- Version of simoncat-front -->
+    <simoncat.front.version>1.0.0-SNAPSHOT</simoncat.front.version>
   </properties>
 
   <dependencyManagement>
@@ -34,6 +37,15 @@
         <groupId>com.simoncat.framework</groupId>
         <artifactId>simoncat-framework-library-management</artifactId>
         <version>${simoncat.framework.version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+
+      <!-- Front Library Management -->
+      <dependency>
+        <groupId>com.simoncat.front</groupId>
+        <artifactId>simoncat-front-library-management</artifactId>
+        <version>${simoncat.front.version}</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>

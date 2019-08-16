@@ -16,9 +16,12 @@
     <module>simoncat-front-build/simoncat-station-topology-graph-build</module>
 
     <!-- Modules in framework -->
+    <module>simoncat-framework-library-management</module>
     <module>simoncat-framework-build-base</module>
 
     <!-- Modules in front -->
+    <module>simoncat-front-library-management</module>
     <module>simoncat-front-build-base</module>
+    <module>simoncat-front-springboot-build</module>
   </modules>
 </project>

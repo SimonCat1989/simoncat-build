@@ -25,10 +25,6 @@
     <skip.all.test.cases>true</skip.all.test.cases>
     <!-- Version of simoncat-framework -->
     <simoncat.framework.version>1.0.0-SNAPSHOT</simoncat.framework.version>
-    <!-- Version of Jackson -->
-    <jackson.version>2.5.0</jackson.version>
-    <!-- Version of Jedis -->
-    <jedis.version>2.9.0</jedis.version>
   </properties>
 
   <dependencyManagement>

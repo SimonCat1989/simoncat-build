@@ -18,7 +18,7 @@
     <simoncat.framework.version>1.0.0-SNAPSHOT</simoncat.framework.version>
     <springframework.vesion>5.1.5.RELEASE</springframework.vesion>
     <lucene.version>8.2.0</lucene.version>
-    <jackson.version>2.9.8</jackson.version>
+    <jackson.version>2.11.0</jackson.version>
   </properties>
 
   <dependencyManagement>

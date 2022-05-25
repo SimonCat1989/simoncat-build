@@ -16,7 +16,7 @@
     <skip.all.test.cases>true</skip.all.test.cases>
     <!-- Version of simoncat-framework -->
     <simoncat.framework.version>1.0.0-SNAPSHOT</simoncat.framework.version>
-    <springframework.vesion>5.1.5.RELEASE</springframework.vesion>
+    <springframework.vesion>5.2.22.RELEASE</springframework.vesion>
     <lucene.version>8.2.0</lucene.version>
     <jackson.version>2.9.8</jackson.version>
   </properties>
